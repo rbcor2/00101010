@@ -17,8 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from home.views import home_view
+from sarahah.views import sarahah_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^sarahah/', sarahah_view, name='sarahah_view'),
     url(r'^$', home_view, name='home_view'),
 ]

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>{{ title }}</title>
+    <style>
+ul {
+  font-family: "kalpurush";
+
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none !important;
+    display:inline-block;
+    padding:10px;
+}
+</style>
+</head>
+<body class='w3-container'>
+
+{% if sent %}
+    <h4 class="w3-panel w3-green w3-card-4 wc-center">আপনার বার্তাটি সফল ভাবে প্রেরিত হয়েছে!<br/>
+    <a href="/">হোম পেজ</a>.</h4>
+    <hr/>
+{% endif %}
+
+{% if sent == False %}
+    <h4 class="w3-panel w3-yellow w3-card-4 wc-center">আপনার বার্তাটি সফলভাবে প্রেরন করা যায়নি। আবার চেষ্টা করুন অথাবা <a href="http://fb.com/rabiulislam993">সরাসরি যোগাযোগ করুন</a>।</h4>
+    <hr/>
+{% endif %}
+
+
+<div class="w3-center w3-padding-64">
+    <form method="POST">
+        {{ form.body }}
+        {% csrf_token %}<br/>
+        <button class="w3-button w3-medium"><input type="submit" value="send"/></button>
+    </form>
+            <div>
+                <ul>
+                    <li><a href="/">হোম</a></li>
+                    <li><a href="http://rabiulislam993.blogspot.com/">ব্লগ</a></li>
+                    <li><a href="/sarahah">সারাহাহ</a></li>
+                </ul>
+            </div>
+</div>
+
+</body>
+</html>

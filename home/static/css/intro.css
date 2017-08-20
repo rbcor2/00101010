@@ -31,7 +31,7 @@ html,body {
   width: 100%;
 }
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "kalpurush",sans-serif;
   font-weight: 300;
   color: #585b60;
   line-height: 26px;
@@ -60,6 +60,7 @@ body {
 @font-face {
     font-family: "kalpurush";
     src: url(/static/fonts/kalpurush.ttf) format("truetype");
+
 }
 
 .big-txt {
@@ -75,235 +76,27 @@ body {
   font-weight: 100;
   letter-spacing: 2px;
   margin: 0;
+
 }
 
+ul {
+  font-family: "kalpurush";
 
-
-
-.main-section {
-  padding: 0 ;
-}
-.heading-intro {
-  color: #9d9d9d;
-  font-family:  "kalpurush",cursive;
-  font-size: 50px;
-  letter-spacing: 2px;
-  margin: 0 auto 70px;
-  text-align: center;
-  text-transform: uppercase;
-  word-spacing: 15px;
-}
-
-.demo {
-  box-shadow: 0 0 55px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-  transition: all 0.3s ease 0s;
-  overflow: hidden;
-}
-.image {
- overflow: hidden;
- display: block;
- position: relative;
-}
-.demo a {
-  display: block;
-  text-decoration: none;
-  position: relative;
-}
-.demo .v-logo {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	font-size: 35px;
-	color: #f2efef;
-	transition: all 0.3s ease 0s;
-}
-.demo .image { 
-    background: #f6f6f6;
-    text-align: left;
-}
-.demo img {
-  transition: all 1s ease 0s;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 0px;
-  border: none;
-  line-height: 0px;
-  outline: none;  
-}
-
-
-.demo a:hover img {
-    transform: scale3d(1.1, 1.1, 1);
-}
-.demo a:hover .v-logo {
-  color: #b892df;
-}
-.demo a:hover .v-logo .fa-android {
-  color: #7CB342;
-}
-.demo h4 {
-  letter-spacing: 2px;
-  margin: 0;
-  padding: 25px 0;
-  color: #585b60;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-
-
-.core-features {
-  background-color: #f9f9f9;
-  padding-bottom: 120px;
-}
-.core-heading {
-  position: relative;
-  padding: 60px 0;
-  margin: 0 0 100px;
-  background-color: #2d2d2d;
-}
-.core-heading:after {
-	top: 99%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-top-color: #2d2d2d;
-	border-width: 39px;
-	margin-left: -39px;
-}
-.core-heading h2 {
-  font-size: 45px;
-  font-weight: 100;
-  letter-spacing: 8px;
-  text-align: center;
-  text-transform: capitalize;
-  word-spacing: 15px;
-  color: #fff;
-  margin: 0;
-}
-
-
-.feature {
-    padding: 45px 30px;
-    box-shadow: 0 0 45px rgba(0,0,0,0.1);
-    min-height: 180px;
-    margin-bottom: 60px;
-    border-radius: 6px;
-    text-align: center;
-	display: table;
-	width: 100%;
-	background-color: #fff;
-}
-.feature-inner {
-  display: table-cell;
-  height: 100%;
-  width: 100%;
-  vertical-align: middle;
-}
-.feature .icon {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 0 auto 30px;
-    background: #f6f6f6;
-    border-radius: 50%;
-}
-.feature .icon span.icon {
-    font-size: 40px;
-    padding-top: 20px;
-   color: #f275b5;
-}
-.feature h3 {
-  line-height: 30px;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-
-.purchase {
-  padding: 200px 0;
-  text-align: center;
-  display: block;
-  background-color: #ddd;
-  background-image: url(../img/pattern.png);
-  background-repeat: repeat;
-}
-.purchase .btn-purchase {
-  background-color: #2d2d2d;
-  border-radius: 50px;
-  color: #fff;
-  font-size: 22px;
-  letter-spacing: 1px;
-  padding: 20px 60px;
-  text-transform: uppercase;
-}
-.purchase .btn-purchase:hover {
-  background-color: #111;
-  color: #fcfcfc;
-}
-
-
-
-
-
-
-
-
-
-.overlay-ripe {
-  position: relative;
-}
-.overlay-ripe:before {
-  content :"";
-  background-image: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
-  width: 100%;
-  height: 100%;
+  list-style-type: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  opacity:0.75;
+  bottom: 0;
+  text-align: center;
+  list-style: none;
 }
 
-.hover-flat {
-  position: relative;
-  transition: all 0.3s ease 0s;
+li {
+    display: inline-block;
 }
- 
-.hover-flat::before {
-  background: rgba(0, 0, 0, 0) radial-gradient(ellipse at center center , rgba(0, 0, 0, 0.25) 0%, transparent 80%) repeat scroll 0 0;
-  content: "";
-  height: 10px;
-  left: 10%;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  transition-duration: 0.3s;
-  transition-property: transform, opacity;
-  width: 80%;
-  z-index: -1;
+a {
+    text-decoration: none !important;
+    display:inline-block;
+    padding:10px;
 }
-.hover-flat, 
-.hover-flat, 
-.hover-flat {
-  transform: translateY(-5px);
-}
-
-.hover-flat::before, 
-.hover-flat::before, 
-.hover-flat::before {
-  opacity: 1;
-  transform: translateY(5px);
-}
-
 
 
 
@@ -345,8 +138,5 @@ body {
 	.p-bot-120,
 	.core-features {
 	  padding-bottom: 60px;
-	}
-	.purchase {
-	  padding: 80px 0;
 	}
 }
