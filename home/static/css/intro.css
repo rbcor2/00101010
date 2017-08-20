@@ -44,7 +44,9 @@ body {
   height: 100%;
   width: 100%;
   display: table;
-  background: url(/static/img/bg-cover.jpg) 100% / cover no-repeat #333;
+  background: url(/static/img/bg-cover.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: #fff;
 }
 .cover {
