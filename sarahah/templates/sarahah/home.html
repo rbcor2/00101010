@@ -5,23 +5,29 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>{{ title }}</title>
     <style>
-ul {
-  font-family: "kalpurush";
+        @font-face {
+        font-family: "kalpurush";
+        src: url(/static/fonts/kalpurush.ttf) format("truetype");
 
-  list-style-type: none;
-  position: absolute;
-  bottom: 0;
-  list-style: none;
-}
+        }
+        ul, div, h4, textarea {
+            font-family: "kalpurush";
+        }
+        ul {
+          list-style-type: none;
+          position: absolute;
+          bottom: 0;
+          list-style: none;
+        }
 
-li {
-    display: inline-block;
-}
-a {
-    text-decoration: none !important;
-    display:inline-block;
-    padding:10px;
-}
+        li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none !important;
+            display:inline-block;
+            padding:10px;
+        }
 </style>
 </head>
 <body class='w3-container'>
