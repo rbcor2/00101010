@@ -26,6 +26,7 @@ def sarahah_view(request):
 
             if sent:
                 sent=True
+                form = MessageForm()
         return render(request, 'sarahah/home.html', {'sent':sent, 'form':form})
 
     else:
