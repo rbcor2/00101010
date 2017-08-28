@@ -1,6 +1,6 @@
 {
 	"deploy": {
 		"module":"homepro.wsgi:application",
-		"managetasks":['migrate',]
+		"managetasks":["migrate"]
 	}
 }
